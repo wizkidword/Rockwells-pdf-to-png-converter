@@ -72,6 +72,16 @@ Windows may show a **Microsoft Defender SmartScreen** warning for newly built un
 
 The first launch can also be slightly slower while Windows performs initial checks.
 
+## Create a release
+
+To build and publish a new Windows EXE via GitHub Actions:
+
+```bash
+git tag vX.Y.Z && git push origin vX.Y.Z
+```
+
+After the workflow completes, download `pdf-to-png-gui.exe` from the repo’s **Releases** page.
+
 ## Notes
 
 - If page range is invalid or out of bounds, the app shows a clear error.
